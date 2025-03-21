@@ -1,0 +1,128 @@
+*{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.recognition-container {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    background-color: #e8e8e8;
+    /* padding-top:7% ; */
+    min-height: 100%;
+  
+  }
+
+
+  .header{
+    background: url('../assets/3.jpg') no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+    height: 70%;
+  }
+  
+  .usecase {
+    text-align: center;
+    padding: 10rem 0;
+    color: #fff;
+  }
+  
+  .usecase h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .usecase p {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 1200px) {
+    .recognition-container {
+      flex-flow:column;
+      min-height: 100%;
+    }
+  }
+  .image-section{
+
+    position: relative;
+    width: 55%;
+    height: 80vh;
+    /* background-color: aqua; */
+  }
+  .img1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    max-width: 80%;
+    height: 70%;
+    border: 0.4vh solid black;
+    /* border-radius: 25px;  */
+    transition: 0.4s;
+  }
+  .img2{
+    top: 50%;
+    left: 60%;
+    position: absolute;
+    max-width: 50%;
+    height: 40%;
+    max-height: 30%;
+    border: 0.4vh solid rgb(0, 0, 0);
+    /* border-radius: 25px;  */
+    transition: 0.4s;
+  }
+  .imgsec{
+    box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.424);
+
+  }
+  .imgsec:hover{
+    scale: 1.05;
+    border-radius: 25px; 
+  }
+  .text-section {
+    margin-left:0;
+
+    /* background-color: blue; */
+    width: 50%;
+    height: 80%;
+  }
+  
+  .text-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  
+  .text-section p strong {
+    display: block;
+    margin-top: 10px;
+  }
+  /* .head{
+    /* background-color: blue; */
+    /* text-align: end;
+    font-size: 5vh;
+    font-weight: 800;
+    color: #5a5a5a;
+    margin-bottom: 2vh; 
+
+        
+  } */
+  .Pcontent{
+   
+    border: 3px solid rgb(154, 154, 154);
+    padding: 0.5vh;
+    margin-bottom: 3vh;
+    transition: 0.4s;
+    color: rgb(52, 52, 52);
+    font-size: larger;
+    box-shadow: 0.6vh 0.6vh rgb(97, 97, 97);
+
+  }
+  
+  .Pcontent:hover{
+    box-shadow: 0vh 0vh rgb(0, 0, 0);
+    border-color:rgb(91, 91, 91) ;
+  }
+
+.quest{
+  font-size: 2vh;
+  color: #3a3a3a;
+  margin-bottom: 3vh;
+}

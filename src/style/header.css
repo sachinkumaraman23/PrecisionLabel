@@ -1,0 +1,96 @@
+.navbar-custom {
+  background-color: #333;
+  transition: background-color 0.3s;
+}
+
+.navbar-custom.navbar-scrolled {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 157, 255, 0.512);
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  transition: color 0.3s;
+}
+
+.navbar-custom .nav-link.active {
+  color: #00f7ff !important;
+}
+
+.navbar-custom.navbar-scrolled .nav-link {
+  color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00f7ff;
+}
+
+.navbar-custom.navbar-scrolled .nav-link:hover {
+  color: #00f7ff;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.dropdown-menu .dropdown-item {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #00f7ff;
+}
+
+.contact-us-btn {
+  background: linear-gradient(45deg, #09a62e, #3bee3b);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  font-family: "Titillium Web", sans-serif;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.1s ease;
+}
+
+.contact-us-btn:hover {
+  transform: scale(1.05);
+  color: #01ff3c;
+}
+
+.contact-us-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive typography */
+.navbar-nav .nav-link,
+.dropdown-menu .dropdown-item,
+.contact-us-btn {
+  font-size: 17px;
+  line-height: 29px;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav .nav-link,
+  .dropdown-menu .dropdown-item,
+  .contact-us-btn {
+      font-size: 15px;
+      line-height: 25px;
+  }
+
+  .navbar-custom .navbar-toggler {
+      margin-left: auto;
+  }
+}

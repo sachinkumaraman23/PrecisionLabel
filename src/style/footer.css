@@ -1,0 +1,50 @@
+.footer-custom {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+}
+
+.footer-custom h5 {
+  font-weight: 700;
+  color: #00f7ff;
+  margin-bottom: 20px;
+}
+
+.footer-custom p, .footer-custom a {
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.footer-custom a:hover {
+  color: #00f7ff;
+}
+
+.footer-custom .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer-custom .social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-custom .social-icons a:hover {
+  color: #00f7ff;
+}
+
+@media (max-width: 767px) {
+  .footer-custom h5 {
+      margin-top: 20px;
+  }
+
+  .footer-custom .social-icons {
+      margin-top: 10px;
+  }
+}

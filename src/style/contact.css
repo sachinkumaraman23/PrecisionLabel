@@ -1,0 +1,85 @@
+.headers{
+    background: url('../assets/phone.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 70%;
+  }
+ 
+  .hero {
+    text-align: left;
+    padding: 10rem 0;
+    color: #FFF;
+    padding-left: 6.5rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+.contact-section {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    padding: 50px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info h4 {
+    font-size: 1.75em;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form .form-group label {
+    font-weight: bold;
+  }
+  
+  .contact-form .form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border-color: #ced4da;
+  }
+  
+  .contact-form .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  }
+  
+  .contact-form .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: #0056b3;
+  }
+  
