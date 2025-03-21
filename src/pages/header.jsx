@@ -11,6 +11,7 @@ function Header() {
   const location = useLocation();
   const [activeKey, setActiveKey] = useState(location.pathname);
   const [openDropdown, setOpenDropdown] = useState(null); // Track open dropdown
+  const [expanded, setExpanded] = useState(false); // Track navbar expansion for mobile
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +25,7 @@ function Header() {
   useEffect(() => {
     setActiveKey(location.pathname);
     setOpenDropdown(null); // Close dropdown when navigating
+    setExpanded(false); // Collapse navbar on navigation
   }, [location]);
 
   const handleDropdownToggle = (dropdown) => {
@@ -32,19 +34,29 @@ function Header() {
 
   const handleMenuItemClick = () => {
     setOpenDropdown(null); // Close dropdown immediately when an item is clicked
+    setExpanded(false); // Collapse navbar on mobile
   };
 
   return (
-    <Navbar expand="lg" fixed="top" className={`navbar-custom ${scrolled ? 'navbar-scrolled' : ''}`}>
+    <Navbar
+      expand="lg"
+      fixed="top"
+      expanded={expanded} // Controls mobile collapse behavior
+      className={`navbar-custom ${scrolled ? 'navbar-scrolled' : ''}`}
+    >
       <Container>
         <Navbar.Brand href="/">
           <img src={Logo} alt="Logo" height="40" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* Mobile Toggle Button */}
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={() => setExpanded(expanded ? false : true)}
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" activeKey={activeKey}>
             <LinkContainer to="/">
-              <Nav.Link eventKey="/">Home</Nav.Link>
+              <Nav.Link eventKey="/" onClick={() => setExpanded(false)}>Home</Nav.Link>
             </LinkContainer>
             
             {/* Services Dropdown */}
@@ -93,7 +105,7 @@ function Header() {
             </NavDropdown>
 
             <LinkContainer to="/contact">
-              <Button className="contact-us-btn ms-2">Contact Us</Button>
+              <Button className="contact-us-btn ms-2" onClick={() => setExpanded(false)}>Contact Us</Button>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
